@@ -1,0 +1,285 @@
+<!DOCTYPE hmtl>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+<title>Harley Healthcare</title>
+ <style>
+/* Font */
+body {
+  font-family: Arial, sans-serif;
+}
+	
+/* Company Name */
+.header {
+  padding-bottom: 10px;
+  margin-left: 200px;
+  text-align: center; 
+  background: #1963DB; 
+  color: white;
+  width: 100%;
+  float: right;
+  position: relative;
+  border-style: solid;
+  border-color: #DDB1F1;
+  border-bottom: none;
+}
+
+
+/* The left hand navigation menu */
+.navigation {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: sticky;
+  height: 100%;
+  overflow: auto;
+  float: left;
+    border-style: solid;
+    border-right: none;
+  border-color: #DDB1F1;
+  font-size:20px;
+}
+
+/* Navigation links */
+.navigation a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.navigation a.active {
+  background-color: rgba(148,175,101,1);
+  color: white;
+}
+
+/* Links on mouse-over */
+.navigation a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+.navigation a.logout{
+  color: red;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  padding: 1px 16px;
+  height: 100%;
+  width: calc(100% - 200px - 26%);
+  text-align: left;
+  align-items: left;
+  border-style: solid;
+  border-color: #DDB1F1;
+  border-right: none;
+  position: relative;
+  float: left;
+  display: box;          
+}
+
+/* News Feed */
+div.newsfeed {
+  padding: 1px 16px;
+  height: 100%;
+  width:20%%;
+  display: box;
+  float: right;
+  fixed;
+  text-align: left;
+  align-items: left;
+  border-style: solid;
+  border-color: #DDB1F1;
+  background-color: #D8BFD8;
+                
+}
+ /* Submit Button */
+$button: rgba(148,186,101,0.7);
+  
+ /* Each field of form */
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height:50px;
+  outline: none;
+  margin:0;
+}
+              
+            
+/* Space for entry in fields */           
+input[type="text"] {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  font-size: 1 em;
+  padding: .8em .5em;
+  border-radius: 2px;
+  float:left;
+  margin: 10px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background: $button;
+  box-shadow: 0 3px 0 0 darken($button, 10%);
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  text-align: center;
+  margin: .5em 0 0;
+  outline: none;
+  padding: 0em 0;
+  text-shadow: 0 1px #008037;
+}
+	
+/* Submit button on mouse-over */
+input[type="submit"]:hover {
+  background: rgba(148,175,101,1);
+  text-shadow:0 1px 3px darken($button, 30%);
+}
+        
+
+	/* Page title */ 
+	h2{
+		background-color: #FFDE59;
+		padding: 30px;
+		text-align:center;
+	}
+	
+	h3{
+	font-size:23px;
+	}
+	p{
+	
+	font-size:20px;
+	}
+       
+/* Body */
+.welcomemessage {
+  background: #fff;
+  padding: 30px;
+  max-width: 55%;
+  max-height: 250px;
+  float: left;
+  margin: 0 auto 0;
+  border-radius: 2px;
+}
+
+.checkin {
+                float: right;
+                padding: 30px;
+                padding-bottom: 20px;
+                border:solid;
+                border-color: black;
+                background-color: #FFDE59;
+                text-align: right;
+                text-transform: uppercase;
+                max-height: 250px;
+                max-wifth: 250px;
+                
+}
+       
+.print {
+                float: right;
+                padding: 30px;
+                padding-bottom: 20px;
+                border:solid;
+                border-color: black;
+                background-color: #FFDE59;
+                text-align: left;
+                text-transform: uppercase;
+                max-height: 250px;
+                max-width: 227px;
+                margin-top:30px;
+                
+                
+                
+}  
+
+     .footer{
+            background-color: #1963DB;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            color:white;
+            bottom: 0;
+            position: fixed;
+            }
+            
+            iframe:focus {
+  outline: none;
+  height: 100%;
+}
+
+iframe[seamless] {
+  display: block;
+  height: auto;
+}
+
+    </style>
+    
+  </head>
+<body> 
+<!-- Header -->
+ <div class="header">
+ 	<img src="images/HarleyLogo.png" style="float:top;width:350px;height:300px;">  
+</div>
+<!-- The navigation -->
+ <div class="row">
+
+<div class="navigation">
+  <a class="active" href="index.html">Home</a>
+  <a  href="VisitorPortal.html">Visitors</a>
+  <a href="PatientLoginScreen.html">Patients</a>
+  <a href="HospitalStaffLogin.html">Hospital Staff</a>
+  <a class="logout" href="logout.jsp">Logout</a>
+</div>
+<!-- Page content -->
+        <div class="content">
+                    <h2>Finding new ways to heal</h2>
+                <h3>Meet Our Amazing staff</h3>
+                <img src="images/staff.jpg" style="float:left;padding:20px;"/>
+                <p >At Harley Healthcare, we only want the best for our 
+                    patients. We hire an inclusive and sharp background of
+                    doctors capable of bringing warm patient care to making
+                    critical decisions to best serve those who walk through
+                    our doors. </p>
+                <h3>Harley Healthcare 2020 Food Drive</h3>
+                <p>Our annual spring Food Drive is upon us!
+                    We are kindly asking for these items to donate to the local
+                    Boys and Girls club.
+                </p>
+                <ul>
+                    <li>Canned Foods</li>
+                    <li>Dry Foods</li>
+                    <li>Pasta</li>
+                    <li>Cereal</li>
+                    <li>Toiletries(Soap, toothpase, etc.)</li>
+                </ul>
+                <h3>COVID Advice from Harley Healthcare</h3>
+                <p>To protect our patients and staff from the virus,
+                    we only allow patients to bring a visitor if the
+                    patient is under 12 years of age. Otherwise, we want
+                    to reduce the number of people coming in and out of the 
+                    Hospital. <br /> <br />
+                    Masks are required to enter the building and temperatures
+                    will be checked upon arrival. Stay Safe!
+                </p>
+            </div>   
+        </div>
+        <div class="newsfeed">
+            <h1>News Feed</h1>
+            <iframe float="right" font-size="9px" width="100%" height="100%" src="https://rss.app/embed/v1/G0lXj4dI3OJ7Ejeh" frameBorder="0"></iframe>
+            
+        </div>
+    
+   <div class="footer"><br>FINDING NEW WAYS TO HEAL</div>
+</body>
+</html>
